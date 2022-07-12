@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AlticciComponent } from './pages/alticci/alticci.component'
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'alticci',
+    component: AlticciComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

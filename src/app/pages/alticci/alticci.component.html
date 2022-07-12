@@ -1,0 +1,13 @@
+<content>
+    <div class="displayResult" *ngIf="result && !isLoading">
+        Result<h2>{{result}}</h2>
+    </div>
+    <div class="form">
+        <h4>Choose a number and click on Search button to find the Position value of Alticci Sequence.</h4>
+        <div class="row">
+            <label>Position</label>
+            <input id="position" type="number" placeholder="0" [disabled]="isLoading" >
+        </div>
+        <button class="btn" (click)="getAlticci()" [disabled]="isLoading" >Search</button>
+    </div>
+</content>
