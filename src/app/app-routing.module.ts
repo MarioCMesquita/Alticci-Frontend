@@ -4,7 +4,7 @@ import { AlticciComponent } from './pages/alticci/alticci.component'
 
 const routes: Routes = [
   {
-    path: 'alticci',
+    path: '',
     component: AlticciComponent
   }
 ];
