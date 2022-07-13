@@ -11,7 +11,7 @@ import { AlticciService } from '../../services/alticci.service'
 export class AlticciComponent {
 
   isLoading: boolean = false;
-  result:number | null = null;
+  result:any = null;
 
   constructor(private alticciService: AlticciService) { }
 
@@ -20,9 +20,7 @@ export class AlticciComponent {
     
     if (number !== '') {
       this.isLoading = true;
-      const result = await this.alticciService.getAlticci(parseInt(number, 10));
-      console.log(result);
-      this.result = 8;
+      this.result = await this.alticciService.getAlticci(parseInt(number, 10));
       this.isLoading = false;
     }
   }
